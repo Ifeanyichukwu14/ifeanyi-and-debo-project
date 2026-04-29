@@ -1,0 +1,280 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Design */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #0a1f44;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Logo */
+/* Logo layout */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+}
+
+.logo img {
+    height: 45px;
+    width: auto;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    gap: 40px; /* Space between links */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Nav Links */
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #00c3ff;
+}
+/* ================= MISSION PAGE ================= */
+
+.mission-page {
+   background-image:
+  linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+   url('../images/WhatsApp\ Image\ 2026-03-02\ at\ 3.18.04\ PM\ \(3\).jpeg');
+   background-size:cover;
+  background-position: center;
+ background-repeat: no-repeat; 
+    min-height: 100vh;
+    margin-top: 85px;
+    padding: 140px 8% 60px; 
+    text-align: center;
+}
+
+.mission-page h1 {
+    font-size: 38px;
+    margin-bottom: 60px;
+    color: #f9f9f9;
+}
+
+.mission-wrapper {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.mission-box {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(10px); /* for Safari */
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 15px;
+  border: 1px solid rgba(255,255,255,0.3);
+      flex: 1;
+    transition: 0.3s;
+}
+
+.mission-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.mission-box i {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #0a1f44;
+}
+
+.mission-box h2 {
+    margin-bottom: 20px;
+    color: #fbfbfc;
+}
+
+.mission-box p {
+    line-height: 1.7;
+    color: #faf8f8;
+}
+/* ================= CONTACT PAGE ================= */
+
+.contact-page {
+   background-image:
+  linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+   url('../images/WhatsApp\ Image\ 2026-03-02\ at\ 3.18.03\ PM.jpeg');
+ background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+    min-height: 100vh;
+    margin-top: 85px;
+    padding: 140px 8% 60px;
+    text-align: center;
+}
+
+.contact-page h1 {
+    font-size: 38px;
+    margin-bottom: 60px;
+    color: #f1f2f5;
+}
+
+.contact-wrapper {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-box {
+   background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(10px); /* for Safari */
+  padding: 40px;
+  border-radius: 15px;
+  border: 1px solid rgba(255,255,255,0.3);
+   margin-top: 30px;
+      flex: 1;
+    transition: 0.3s;
+    flex: 1;
+    transition: 0.3s;
+}
+
+.contact-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.contact-box i {
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #0a1f44;
+}
+
+.contact-box h2 {
+    margin-bottom: 15px;
+    color: #f9fafc;
+}
+
+.contact-box p {
+    color: #fcf9f9;
+    line-height: 1.6;
+}
+
+/* Hamburger button (hidden on desktop) */
+.menu-btn {
+    display: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* Content Spacing (so header doesn't overlap) */
+section {
+    padding-top: 120px;
+}
+
+/* Main Content */
+.content {
+  background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 8%;
+    flex-wrap: wrap;
+}
+
+/* Text Section */
+.info {
+    max-width: 600px;
+}
+
+.info h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.info p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Button */
+.info-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #0a1f44;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.info-btn:hover {
+    background: #00c3ff;
+}
+
+/* Image */
+.image{
+  width: 400px;
+  margin: 0 auto;
+}
+.images {
+  display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* ===================== */
+/* RESPONSIVE DESIGN */
+/* ===================== */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: #0a1f44;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0;
+        display: none;
+        text-align: center;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .images {
+        margin-top: 30px;
+    }
+}
